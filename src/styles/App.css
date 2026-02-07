@@ -1,0 +1,19 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
+#root { display: flex; flex-direction: column; min-height: 100vh; }
+.App { flex: 1; max-width: 1200px; margin: 0 auto; width: 100%; padding: 20px; }
+.App-header { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 12px; padding: 40px 20px; margin-bottom: 40px; color: white; text-align: center; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); }
+.App-header h1 { font-size: 3em; margin-bottom: 10px; font-weight: 700; }
+.App-header p { font-size: 1.2em; opacity: 0.9; }
+.App-main { flex: 1; }
+.salas-section h2 { color: white; margin-bottom: 30px; font-size: 2em; text-align: center; }
+.salas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-bottom: 40px; }
+.sala-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 12px; padding: 25px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.sala-card:hover { transform: translateY(-8px); box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2); }
+.sala-card h3 { color: #333; margin-bottom: 15px; font-size: 1.5em; }
+.sala-card p { color: #666; margin-bottom: 10px; font-size: 1em; }
+.sala-card button { width: 100%; padding: 12px; margin-top: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 8px; font-size: 1em; font-weight: 600; cursor: pointer; transition: opacity 0.3s ease; }
+.sala-card button:hover { opacity: 0.9; }
+.sala-card button:disabled { background: #ccc; cursor: not-allowed; }
+.loading { display: flex; justify-content: center; align-items: center; height: 100vh; color: white; font-size: 1.5em; }
+@media (max-width: 768px) { .App-header h1 { font-size: 2em; } .App-header p { font-size: 1em; } .salas-grid { grid-template-columns: 1fr; } }
