@@ -1,20 +1,60 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🏛️ DomusNostra
 
-# Run and deploy your AI Studio app
+## Sistema de Reserva de Salones - ITSI
 
-This contains everything you need to run your app locally.
+### 📋 Descripción
+Aplicación web para reservar salones y espacios comunes en el Instituto Tecnológico Superior Iberoamericano (ITSI).
 
-View your app in AI Studio: https://ai.studio/apps/drive/1jaG4y4nPkkboxZrQNeXidAgLbtG5Mo5X
+### 🚀 Inicio Rápido
 
-## Run Locally
+#### Requisitos
+- Node.js 18+
+- npm o yarn
 
-**Prerequisites:**  Node.js
+#### Instalación
+```bash
+git clone https://github.com/Teologado/DomusNostra.git
+cd DomusNostra
+npm install
+```
 
+#### Desarrollo
+```bash
+npm run dev
+```
+Abre http://localhost:5173
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+#### Build para Producción
+```bash
+npm run build
+npm run preview
+```
+
+### 🌐 Despliegue a GitHub Pages
+El deployment automático se ejecuta en cada push a main mediante GitHub Actions.
+
+### 📁 Estructura del Proyecto
+```bash
+src/
+├── components/          # Componentes React reutilizables
+├── pages/               # Páginas principales
+├── types/               # Definiciones TypeScript
+├── styles/              # Estilos CSS
+├── App.tsx              # Componente principal
+└── index.tsx            # Punto de entrada
+```
+
+### 🛠️ Tecnologías
+- React 18
+- Framework UI
+- Vite
+- Build tool
+- TypeScript
+- Type safety
+- CSS3
+- Estilos
+- GitHub Pages
+- Hosting
+
+### 📝 Licencia
+MIT
